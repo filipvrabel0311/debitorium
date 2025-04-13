@@ -12,7 +12,7 @@ export default defineConfig({
   define: {
     "process.env": {
       VITE_APP_TITLE: "Debitorium",
-      VITE_APP_DESCRIPTION: "Debitorium - Your trusted financial platform",
+      VITE_APP_DESCRIPTION: "Debitorium",
     },
   },
 });
