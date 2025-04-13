@@ -1,7 +1,18 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  build: {
+    // ...existing code...
+  },
+  server: {
+    // ...existing code...
+  },
+  define: {
+    "process.env": {
+      VITE_APP_TITLE: "Debitorium",
+      VITE_APP_DESCRIPTION: "Debitorium - Your trusted financial platform",
+    },
+  },
+});
