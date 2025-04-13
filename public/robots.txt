@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://debitorium.com/sitemap.xml
