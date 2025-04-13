@@ -1,0 +1,91 @@
+/* Updated to use the sexy font globally */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #0a0a0a;
+  color: #f8f8f8;
+  line-height: 1.6;
+}
+
+.App {
+  padding: 0 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  margin: 4rem 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #f5b041;
+}
+
+/* CTA styles */
+.cta {
+  background: #111;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cta-button {
+  background: #f5b041;
+  color: #111;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #e3a52d;
+}
+
+/* Hero styles */
+.hero {
+  text-align: center;
+  padding: 6rem 1rem 4rem;
+  background: linear-gradient(to right, #1a1a1a, #0a0a0a);
+}
+
+.hero-logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #f5b041;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background: #1a1a1a;
+  padding: 40px 20px;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f5b041;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #e3a52d;
+}
