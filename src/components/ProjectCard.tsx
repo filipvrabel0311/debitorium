@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProjectCard = () => {
   return (
     <section id="hertzra" className="project-card">
