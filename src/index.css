@@ -1,91 +1,201 @@
-/* Updated to use the sexy font globally */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
+/* Consolidated Global Styles */
 body {
-  margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: #0a0a0a;
-  color: #f8f8f8;
-  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
 }
 
-.App {
-  padding: 0 1rem;
-  max-width: 900px;
-  margin: 0 auto;
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.section {
-  margin: 4rem 0;
+a:hover {
+  color: #0056b3;
 }
 
 h1,
 h2,
-h3 {
-  color: #f5b041;
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0;
 }
 
-/* CTA styles */
-.cta {
-  background: #111;
-  padding: 2rem;
-  border-radius: 8px;
-  text-align: center;
+/* Consolidated Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8f9fa; /* Slightly off-white background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.cta-button {
-  background: #f5b041;
-  color: #111;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
   text-decoration: none;
-  font-weight: bold;
-  margin-top: 1rem;
-  display: inline-block;
+  transition: color 0.3s ease;
 }
 
-.cta-button:hover {
-  background-color: #e3a52d;
+.navbar-links a:hover {
+  color: #007bff;
 }
 
-/* Hero styles */
+/* Consolidated Hero Section Styles */
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 6rem 1rem 4rem;
-  background: linear-gradient(to right, #1a1a1a, #0a0a0a);
+  padding: 6rem 2rem;
+  background-color: #ffffff !important; /* Force white background */
+  color: #333;
 }
 
 .hero-logo {
-  max-width: 150px;
-  margin-bottom: 1rem;
+  width: 167px; /* Reduced size to one-third */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-  color: #f5b041;
+.hero-tagline {
+  font-size: 1.2rem; /* Reduced size */
+  font-weight: 400; /* Adjusted weight for subtlety */
+  margin-bottom: 0.8rem;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-bottom: 2rem;
+.hero-description {
+  font-size: 1rem; /* Reduced size */
+  max-width: 500px; /* Adjusted width for better alignment */
+  margin-bottom: 1.5rem;
 }
 
-footer {
-  background: #1a1a1a;
-  padding: 40px 20px;
+/* Consolidated Section Styles */
+section {
+  padding: 3rem 1.5rem;
+  background: #fff;
+  color: #141414;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem; /* Reduced size to match the smaller text */
+  line-height: 1.5; /* Adjusted line height for readability */
+  text-align: center; /* Center-align all section text */
+}
+
+section h2 {
+  font-size: 1.25rem; /* Reduced heading size */
+  margin-bottom: 0.8rem;
+  color: #000;
   text-align: center;
-  color: #777;
-  font-size: 0.9rem;
 }
 
-footer a {
-  color: #f5b041;
-  text-decoration: none;
-  transition: color 0.2s ease;
+/* Ensure descriptive texts are styled as rectangle paragraphs */
+section p {
+  text-align: justify; /* Justify text for rectangle alignment */
+  text-justify: inter-word; /* Improve word spacing for justified text */
+  margin: 0 auto; /* Center the paragraph */
+  max-width: 600px; /* Restrict width for a rectangle shape */
+  line-height: 1.8; /* Adjust line height for readability */
 }
 
-footer a:hover {
-  color: #e3a52d;
+/* Ensure links like 'Visit hertzra.com' are part of the rectangle paragraph */
+section p a {
+  display: inline; /* Ensure links flow within the paragraph */
+  color: #007bff; /* Match link color */
+  text-decoration: underline; /* Underline for emphasis */
+}
+
+.howitworks-section {
+  background: #f9f9f9;
+}
+
+.steps-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step {
+  flex: 1;
+  text-align: left;
+}
+
+.step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #f46a35; /* step number/title in orange for accent */
+}
+
+.step p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.section-intro {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  max-width: 800px;
+}
+
+.benefits-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefits-list li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.benefits-list li::before {
+  content: "\25b9"; /* arrow bullet character */
+  color: #f46a35;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 0.2em;
+  margin-right: 0.5em;
+}
+
+.benefits-list li strong {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+  }
+
+  .steps-container .step {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  section h2 {
+    text-align: center;
+  }
+}
+
+/* Center-align footer content */
+.footer {
+  text-align: center; /* Center the text */
 }
